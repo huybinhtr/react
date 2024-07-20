@@ -1,6 +1,7 @@
 import { createBrowserRouter, Outlet } from "react-router-dom";
 import Navbar from "@/layout/navbar";
 import Home from "@/pages/Home";
+import Program from "@/pages/Program";
 
 
 const AppLayout = () => {
@@ -22,6 +23,10 @@ export const AppRouter: any = createBrowserRouter([
             {
                 path: "/",
                 element: <Home />,
+            },
+            {
+                path: "/program", 
+                element: <Program />
             },
         ],
     }])
