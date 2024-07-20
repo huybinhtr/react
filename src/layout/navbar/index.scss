@@ -1,0 +1,32 @@
+.navbar {
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    position: sticky;
+    justify-content: space-between;
+    background-color: white;
+    padding: 0.5rem 2rem 0 2rem;
+    align-items: center;
+    z-index: 999;
+    border-bottom: 1px solid #e5e5e5;
+
+    .navbarTitle {
+        font-size: 1.5rem;
+        color: black;
+        font-style: normal;
+        margin-bottom: 0.5rem;
+    }
+
+    .navbarMenu {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .navBarMenuFormat {
+        li {
+            padding-bottom: 0.5rem;
+        }
+    }
+}
