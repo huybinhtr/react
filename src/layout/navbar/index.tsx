@@ -38,7 +38,7 @@ export default function Navbar() {
 
   return (
     <div className="navbar">
-        <span className="navbarTitle">VNQSS2025</span>
+        <span className="navbarTitle">VNQCSS2025</span>
         <Menu rootClassName="navBarMenuFormat" className="navbarMenu" onClick={handleNavigate} mode="horizontal" defaultSelectedKeys={[currentPathName]} items={navbarItems} />
     </div>
   )
