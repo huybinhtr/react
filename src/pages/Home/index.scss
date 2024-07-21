@@ -49,6 +49,7 @@
             white-space: nowrap;
         }
     }
+
     .homepageContent {
         width: 100%;
         height: 100%;
@@ -97,6 +98,21 @@
                     margin-left: 2rem;
                 }
             }
+        }
+    }
+
+    .map-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2.5rem;
+        margin-bottom: 2.5rem;
+
+        iframe {
+            width: 100%;
+            max-width: 1060px;
+            height: 450px;
+            border: none;
         }
     }
 }
