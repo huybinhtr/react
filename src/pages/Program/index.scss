@@ -32,20 +32,38 @@
         }
   
         ul {
-          list-style-type: none;
+          list-style-type: none; /* Remove default bullets */
           padding: 0;
   
-          li {
+          .date {
+            font-size: 2rem; /* Larger font size for the date */
+            font-weight: bold; /* Make it bold */
+            margin-bottom: 1rem; /* Add spacing below */
+          }
+  
+          .section-header {
+            font-size: 1.6rem;
+            font-weight: bold;
+            margin: 1rem 0; /* Space around section headers */
+          }
+  
+          .event-item {
             font-size: 1.6rem;
             margin-bottom: 0.5rem;
+            position: relative;
+            padding-left: 2.5rem; /* Space for bullet */
+  
+            &::before {
+              content: '•'; /* Custom bullet point */
+              position: absolute;
+              left: 0;
+              color: #333; /* Bullet color */
+              font-size: 1.6rem; /* Size of bullet */
+              line-height: 1;
+            }
   
             strong {
               font-weight: bold;
-            }
-  
-            em {
-              font-style: italic;
-              color: #555;
             }
           }
         }

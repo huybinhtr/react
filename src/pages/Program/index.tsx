@@ -10,20 +10,35 @@ export default function Program() {
         <div className="calendar">
           <h2>Schedule</h2>
           <ul>
-            <li>
+            <li className="date">
+              <strong>Monday, 26th July 2025</strong>
+            </li>
+            <li className="section-header">
+              <strong>Morning</strong>
+            </li>
+            <li className="event-item">
+              <strong>9:00 AM - 10:00 AM:</strong> Opening Remarks
+            </li>
+            <li className="event-item">
               <strong>10:00 AM - 11:00 AM:</strong> Quantum Computing for Quantum Chemistry - <em>Mohammad Haidar</em>
             </li>
-            <li>
+            <li className="event-item">
               <strong>11:15 AM - 12:15 PM:</strong> Harnessing Quantum with the Eviden Qaptiva - <em>Thomas Ayral</em>
             </li>
-            <li>
-              <strong>1:00 PM - 2:00 PM:</strong> Basic for Quantum Technologies using photon / trapped ions - <em>Christophe Couteau</em>
+            <li className="event-item">
+              <strong>12:15 PM - 1:00 PM:</strong> Lunch Break
             </li>
-            <li>
-              <strong>2:15 PM - 3:15 PM:</strong> Quantum AI / Quantum Machine Learning - <em>Anh Phuong Ta</em>
+            <li className="section-header">
+              <strong>Afternoon</strong>
             </li>
-            <li>
-              <strong>3:30 PM - 4:30 PM:</strong> H2 plus ions Beyond Born-Oppenheimer - <em>Karr Jean-Phillipe</em>
+            <li className="event-item">
+              <strong>1:30 PM - 2:30 PM:</strong> Basic for Quantum Technologies using photon / trapped ions - <em>Christophe Couteau</em>
+            </li>
+            <li className="event-item">
+              <strong>2:45 PM - 3:45 PM:</strong> Quantum AI / Quantum Machine Learning - <em>Anh Phuong Ta</em>
+            </li>
+            <li className="event-item">
+              <strong>4:00 PM - 5:00 PM:</strong> H2 plus ions Beyond Born-Oppenheimer - <em>Karr Jean-Phillipe</em>
             </li>
           </ul>
         </div>
