@@ -1,0 +1,72 @@
+.committee {
+    .committee-title-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        .committee-title {
+            width: 100%;
+            max-width: 100%;
+            text-align: center;
+            margin-top: 2rem;
+
+            h1 {
+                font-size: 3rem;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .committee-list {
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 3rem;
+        column-gap: 2rem;
+        margin: 3rem 10rem;
+
+        .committee-item {
+            align-items: flex-start;
+            justify-content: center;
+            text-align: justify;
+
+            .comittee-item-content {
+                background-color: white;
+                width: fit-content;
+                padding: 2rem;
+                border-radius: 1rem;
+                box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+
+                .committee-item-image {
+                    width: 100%;
+                    height: 100%;
+                    max-width: 200px;
+                    max-height: 200px;
+                    overflow: hidden;
+
+                    img {
+                        width: 100%;
+                        height: 100%;
+                        object-fit: cover;
+                        object-position: center;
+                        filter: grayscale(100%);
+                    }
+                }
+
+                .committee-item-name {
+                    font-size: 1.5rem;
+                    font-weight: bold;
+                    margin-top: 0.5rem;
+                }
+
+                .committee-item-title {
+                    font-size: 1rem;
+                    margin-top: 0.5rem;
+                    font-weight: lighter;
+                }
+            }
+        }
+    }
+}

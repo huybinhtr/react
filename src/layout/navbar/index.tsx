@@ -1,4 +1,4 @@
-import { Menu, MenuProps } from "antd"
+import { Menu, type MenuProps } from "antd"
 import "./index.scss"
 import { useLocation, useNavigate } from "react-router-dom"
 

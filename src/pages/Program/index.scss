@@ -1,13 +1,19 @@
 .program {
-    padding: 2.5rem 1rem;
+  padding: 2.5rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .program-title-container {
     display: flex;
     flex-direction: column;
     align-items: center;
-  
+    gap: 2.5rem;
+
     .program-title {
       text-align: center;
       margin-bottom: 2.5rem;
-  
+
       h1 {
         font-size: 2.5rem;
         color: black;
@@ -15,93 +21,97 @@
         margin: 0;
       }
     }
-  
-    .program-content {
-      width: 100%;
-      max-width: 1200px;
-      display: flex;
-      flex-direction: column;
-      gap: 2.5rem;
-  
-      .calendar {
-        text-align: left;
-  
-        h2 {
-          font-size: 2rem;
-          margin-bottom: 1rem;
-        }
-  
-        ul {
-          list-style-type: none; /* Remove default bullets */
-          padding: 0;
-  
-          .date {
-            font-size: 2rem; /* Larger font size for the date */
-            font-weight: bold; /* Make it bold */
-            margin-bottom: 1rem; /* Add spacing below */
-          }
-  
-          .section-header {
-            font-size: 1.6rem;
-            font-weight: bold;
-            margin: 1rem 0; /* Space around section headers */
-          }
-  
-          .event-item {
-            font-size: 1.6rem;
-            margin-bottom: 0.5rem;
-            position: relative;
-            padding-left: 2.5rem; /* Space for bullet */
-  
-            &::before {
-              content: '•'; /* Custom bullet point */
-              position: absolute;
-              left: 0;
-              color: #333; /* Bullet color */
-              font-size: 1.6rem; /* Size of bullet */
-              line-height: 1;
-            }
-  
-            strong {
-              font-weight: bold;
-            }
-          }
-        }
+  }
+  .program-content {
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+
+    .calendar {
+      text-align: left;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 1rem;
       }
-  
-      .session {
-        display: flex;
-        flex-direction: column;
-        border: 1px solid #ddd;
-        padding: 1.5rem;
-        border-radius: 8px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-        background-color: #fff;
-  
-        h2 {
-          font-size: 2rem;
-          line-height: 2.5rem;
-          font-weight: 700;
-          margin-bottom: 1rem;
+
+      ul {
+        list-style-type: none; /* Remove default bullets */
+        padding: 0;
+
+        .date {
+          font-size: 2rem; /* Larger font size for the date */
+          font-weight: bold; /* Make it bold */
+          margin-bottom: 1rem; /* Add spacing below */
         }
-  
-        p {
-          margin: 0;
+
+        .section-header {
           font-size: 1.6rem;
-          line-height: 1.5;
-          color: #333;
-  
-          &:first-of-type {
-            font-weight: 400;
-            text-decoration: underline;
-            margin-bottom: 0.5rem;
+          font-weight: bold;
+          margin: 1rem 0; /* Space around section headers */
+        }
+
+        .event-item {
+          font-size: 1.6rem;
+          margin-bottom: 0.5rem;
+          position: relative;
+          padding-left: 2.5rem; /* Space for bullet */
+
+          &::before {
+            content: "•"; /* Custom bullet point */
+            position: absolute;
+            left: 0;
+            color: #333; /* Bullet color */
+            font-size: 1.6rem; /* Size of bullet */
+            line-height: 1;
           }
-  
+
           strong {
             font-weight: bold;
           }
         }
       }
     }
+
+    .session {
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ddd;
+      padding: 1.5rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #fff;
+
+      h2 {
+        font-size: 2rem;
+        line-height: 2.5rem;
+        font-weight: 700;
+        margin-bottom: 1rem;
+      }
+
+      p {
+        margin: 0;
+        font-size: 1.6rem;
+        line-height: 1.5;
+        color: #333;
+
+        &:first-of-type {
+          font-weight: 400;
+          text-decoration: underline;
+          margin-bottom: 0.5rem;
+        }
+
+        strong {
+          font-weight: bold;
+        }
+      }
+    }
   }
-  
+}

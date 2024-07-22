@@ -2,6 +2,7 @@ import { createBrowserRouter, Outlet } from "react-router-dom";
 import Navbar from "@/layout/navbar";
 import Home from "@/pages/Home";
 import Program from "@/pages/Program";
+import Committee from "@/pages/Committee";
 
 
 const AppLayout = () => {
@@ -14,7 +15,7 @@ const AppLayout = () => {
 }
 
 
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+// biome-ignore lint/suspicious/noExplicitAny: <explanation>
 export const AppRouter: any = createBrowserRouter([
     {
         path: "/",
@@ -28,5 +29,9 @@ export const AppRouter: any = createBrowserRouter([
                 path: "/program", 
                 element: <Program />
             },
+            {
+                path: "/committee", 
+                element: <Committee />
+            }
         ],
     }])
