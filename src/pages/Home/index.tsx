@@ -21,18 +21,18 @@ export default function Home() {
                 </div>
 
                 <span className="homepageTitle">
-                    INTRODUCTION AND TRAINNING SESSION
+                    INTRODUCTION TO QUANTUM COMPUTING 
                     <br />
-                    TO QUANTUM COMPUTING TECHNOLOGY
+                    AND ARTIFICIAL INTELLIGENCE TECHNOLOGY:
                     <br />
-                    AND ARTIFICIAL INTELLIGENCE
+                    TRAINING SESSION AND WORKSHOPS 
                 </span>
             </div>
             <div className="homepageContent">
                 <div className="section">
                     <h2>Overview</h2>
                     <p>
-                        The study of Quantum Computing and Artificial Intelligence has emerged as a major theme of research in computational technology and revolutionised various industries, including healthcare, finance, logistics, and materials science. It is increasingly evident, promising advancements in areas such as drug discovery, cryptography & communication over the last two decades. The proposed school will gather international experts, spanning across disciplines, who will provide a broad overview (with long and short courses alongside workshops) of this rapidly evolving field. The schedule will leave ample room for discussions. A series of advanced seminars, organized in a workshop style with other invited speakers, will complete the program.
+                        The study of Quantum Computing and Artificial Intelligence has emerged as a major theme of research in computational technology, and revolutionised various industries, including healthcare, finance, logistics, and material sciences. It is increasingly evident, promising advancements in areas such as drug discovery, cryptography & communication over the last two decades. The proposed school is gathering international professors and engineers, who are experts in several fields, including Quantum Information Theory, Machine Learning, Quantum Computing applications in Chemistry and Physics. Bachelor, master and PhD students are warmly welcome to join our school. Interesting sessions, workshops, video sessions and training presentation for each student will be granted. The schedule will leave ample room for discussions. A more detailed description about the program will be detailed as below
                     </p>
                 </div>
                 <div className="section">
