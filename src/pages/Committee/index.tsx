@@ -1,13 +1,14 @@
+import { Image } from "antd";
 import "./index.scss";
+interface ICommittees {
+    name: string;
+    title: string;
+    imageURL: string;
+} 
 
 export default function Committee() {
 
 
-    interface ICommittees {
-        name: string;
-        title: string;
-        imageURL: string;
-    } 
 
     const committees: ICommittees[] = [
         {
@@ -52,10 +53,20 @@ export default function Committee() {
         },
     ]
 
+    const screenWidth = window.innerWidth;
     
   return <div className="committee">
     <div className="committee-title-container">
       <div className="committee-title">
+        <div className="committee-cover">
+            <Image
+                src="/committee/cover-image.jpg"
+                preview={false}
+                width={screenWidth}
+                height={screenWidth}
+                className="cover-image"
+            />
+        </div>
         <h1>Committee</h1>
       </div>
     </div>
